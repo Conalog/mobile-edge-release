@@ -16,4 +16,11 @@
       >.
     </p>
   </body>
+  <script>
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (userAgent.includes("KAKAOTALK")) {
+      window.location.href =
+        "intent://conalog.github.io/mobile-edge-release/files/app-release.apk";
+    }
+  </script>
 </html>
